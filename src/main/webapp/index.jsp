@@ -1,77 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Welcome Page</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 80px 20px;
-        }
-        h1 {
-            font-size: 3em;
-            color: #fff;
-            animation: fadeIn 2s ease-in-out;
-        }
-        p {
-            font-size: 1.2em;
-            margin-top: 20px;
-            color: #f0f0f0;
-        }
-        .card {
-            display: inline-block;
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        @keyframes fadeIn {
-            from {opacity: 0;}
-            to {opacity: 1;}
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #6a11cb;
-            background: linear-gradient(315deg, #6a11cb 0%, #2575fc 100%);
-            color: #fff;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: linear-gradient(315deg, #2575fc 0%, #6a11cb 100%);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>✨ Welcome to My Website ✨</h1>
-        <p>Explore, learn, and enjoy creative content right here.</p>
-        
-        <div class="card">
-            <h2>🌟 Featured Idea</h2>
-            <p>“Innovation distinguishes between a leader and a follower.”</p>
-            <a href="#" class="btn">Learn More</a>
-        </div>
 
-        <div class="card">
-            <h2>🚀 Quick Links</h2>
-            <p>Navigate to exciting sections of the site.</p>
-            <a href="#" class="btn">Get Started</a>
-        </div>
-    </div>
+<head>
+
+<title>GitOps CI/CD Project</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+margin:0;
+}
+
+.header{
+background:#2563eb;
+padding:30px;
+text-align:center;
+}
+
+.container{
+width:80%;
+margin:auto;
+padding:30px;
+}
+
+.card{
+
+background:white;
+color:#111827;
+
+padding:20px;
+
+border-radius:10px;
+
+margin-top:20px;
+
+box-shadow:0px 5px 15px rgba(0,0,0,.2);
+
+}
+
+h1{
+margin:0;
+}
+
+ul{
+line-height:2;
+}
+
+.footer{
+
+margin-top:40px;
+
+text-align:center;
+
+font-size:18px;
+
+color:#d1d5db;
+
+}
+
+.success{
+
+color:green;
+
+font-weight:bold;
+
+font-size:24px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>GitOps CI/CD Pipeline Project</h1>
+
+<p>Java Application deployed using Jenkins, Docker, ArgoCD & Amazon EKS</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Application Status</h2>
+
+<p class="success">Application Running Successfully</p>
+
+</div>
+
+<div class="card">
+
+<h2>CI/CD Pipeline</h2>
+
+<ul>
+
+<li>GitHub</li>
+
+<li>Jenkins</li>
+
+<li>Maven Build</li>
+
+<li>SonarQube Scan</li>
+
+<li>Docker Multi-stage Build</li>
+
+<li>Trivy Image Scan</li>
+
+<li>Docker Hub</li>
+
+<li>GitOps Repository</li>
+
+<li>Argo CD</li>
+
+<li>Amazon EKS</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Project Details</h2>
+
+<p>
+
+Application Name :
+<b>GitOps Java Application</b>
+
+</p>
+
+<p>
+
+Version :
+
+<b>1.0.0</b>
+
+</p>
+
+<p>
+
+Packaging :
+
+<b>WAR</b>
+
+</p>
+
+<p>
+
+Deployment :
+
+<b>Amazon EKS</b>
+
+</p>
+
+</div>
+
+<div class="footer">
+
+Developed by <b>Devi Prasad</b>
+
+<br><br>
+
+GitOps CI/CD Demo Project
+
+</div>
+
+</div>
+
 </body>
+
 </html>
