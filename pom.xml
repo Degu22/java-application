@@ -11,13 +11,43 @@
     <packaging>war</packaging>
 
     <name>GitOps CI/CD Java Application</name>
-    <description>Java Web Application for GitOps CI/CD Pipeline using Jenkins, Docker, ArgoCD and Amazon EKS</description>
+    <description>
+        Java Web Application for GitOps CI/CD Pipeline using Jenkins,
+        SonarQube, Docker, ArgoCD and Amazon EKS
+    </description>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 
     <build>
+
         <finalName>gitops-app</finalName>
 
         <plugins>
 
+            <!-- Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+
+            <!-- WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -27,6 +57,13 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
 
+            </plugin>
+
+            <!-- SonarQube Maven Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.11.0.3922</version>
             </plugin>
 
         </plugins>
